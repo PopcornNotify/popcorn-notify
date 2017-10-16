@@ -4,7 +4,7 @@
   "description": "Easily send emails and text messages from your code",
   "main": "index.js",
   "scripts": {
-    "test": "node exmple.js"
+    "test": "node example.js"
   },
   "keywords": [
     "email",

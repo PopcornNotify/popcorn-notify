@@ -63,3 +63,5 @@ const notify = (recipients, message, config)=>{
     );
   })
 }
+
+module.exports = notify

@@ -11,7 +11,7 @@ Send simple emails and text messages from one API.
 
     let notify = require('popcornnotify')
 
-    notify('555-123-45678', 'New user sign up')
+    notify('555-123-4567', 'New user sign up')
   
     notify('team@example.com', 'Memory exceeded...', {
       subject: 'Staging Error'
