@@ -1,0 +1,31 @@
+{
+  "name": "popcornnotify",
+  "version": "1.0.0",
+  "description": "Easily send emails and text messages from your code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "email",
+    "text",
+    "sms",
+    "messages",
+    "popcorn",
+    "notify",
+    "notification"
+  ],
+  "author": "Colin McDonnell",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinmcd94/bye-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/colinmcd94/bye-react/issues"
+  },
+  "homepage": "https://github.com/colinmcd94/bye-react#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
