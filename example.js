@@ -1,9 +1,9 @@
 // let notify = require('popcornnotify')
 let notify = require('./index')
 
-API_KEY = 'bc8e09beb93845be998ff37943ea5e6a' // 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-TEST_EMAIL = 'colinmcd94@gmail.com'// 'dave@example.com'
-TEST_PHONE = '2159153556' // '5555555555'
+API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+TEST_EMAIL = 'dave@example.com'
+TEST_PHONE = '5555555555'
 
 if (require.main === module) {
 
