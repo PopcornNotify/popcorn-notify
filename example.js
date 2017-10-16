@@ -1,18 +1,41 @@
 let notify = require('popcornnotify')
 
-notify('5555555555', 'New user sign up')
-notify('team@popcornnotify.com', 'Memory exceeded...', {
-  subject: 'Staging Error'
-})
-notify(['5555555555', 'dave@example.com'], "I'm sorry, Dave. I'm afraid I can't do that.")
+API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+TEST_EMAIL = 'dave@example.com'
+TEST_PHONE = '5555555555'
+
+if (require.main === module) {
+
+  notify(TEST_PHONE, 'New user sign up')
+  
+  notify(TEST_EMAIL, 'Memory exceeded...', {
+    subject: 'Staging Error'
+  })
+
+  notify([TEST_PHONE, TEST_EMAIL], "I'm sorry, Dave. I'm afraid I can't do that.")
+
+  // more in-depth example
+  notify([TEST_PHONE, TEST_EMAIL], 'Memory exceeded...', {
+    subject: 'Staging Error',
+    apiKey: "YOUR_API_KEY" // only necessary if environment variable is not set
+  }).then(function(result){
+    console.log(result) // {success: [TEST_PHONE, TEST_EMAIL]}
+  }).catch(function(err){
+    console.log(err)
+  })
 
 
-// more in-depth example
-notify(['5555555555', 'dave@example.com'], 'Memory exceeded...', {
-  subject: 'Staging Error',
-  apiKey: "YOUR_API_KEY" // only necessary if environment variable is not set
-}).then(function(result){
-  console.log(result) // {success: ['5555555555', 'dave@example.com']}
-}).catch(function(err){
-  console.log(err)
-})
+  notify([TEST_PHONE,TEST_EMAIL], "Winter is coming...", {
+    subject: "Reminder from Ned",
+    apiKey:API_KEY
+  })
+  .then(function(response){
+    console.log("Success")
+    console.log(response.body)
+  })
+  .catch(function(err){
+    console.log("Err")
+    console.log(err)
+  })
+
+}

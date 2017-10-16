@@ -1,6 +1,5 @@
 const request = require('request');
-// const ENDPOINT = "https://popcornnotify.com/notify"
-const ENDPOINT = "https://popcornnotify.herokuapp.com/notify"
+const ENDPOINT = "https://popcornnotify.com/notify"
 let API_KEY;
 
 const clean = function(recipient){
@@ -64,13 +63,3 @@ const notify = (recipients, message, config)=>{
     );
   })
 }
-
-notify(['215 915 3556','colinmcd94@gmail.com'], "winter is coming", {subject:"Note from the wall",apiKey:"bc8e09beb93845be998ff37943ea5e6a"})
-.then(function(response){
-  console.log("Success")
-  console.log(response.body) // { success: [ 'colinmcd94@gmail.com' ] }
-})
-.catch(function(err){
-  console.log("Err")
-  console.log(err)
-})

@@ -4,7 +4,7 @@
   "description": "Easily send emails and text messages from your code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node exmple.js"
   },
   "keywords": [
     "email",
@@ -17,14 +17,17 @@
   ],
   "author": "Colin McDonnell",
   "license": "MIT",
+  "engines": {
+    "node": ">=4.2.4"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/colinmcd94/bye-react.git"
+    "url": "git+https://github.com/PopcornNotify/popcorn-notify"
   },
   "bugs": {
-    "url": "https://github.com/colinmcd94/bye-react/issues"
+    "url": "https://github.com/PopcornNotify/popcorn-notify/issues"
   },
-  "homepage": "https://github.com/colinmcd94/bye-react#readme",
+  "homepage": "https://github.com/PopcornNotify/popcorn-notify#readme",
   "dependencies": {
     "request": "^2.81.0"
   }
