@@ -15,7 +15,6 @@ const clean = function(recipient){
 
 const notify = (recipients, message, config)=>{
   return new Promise((res,rej)=>{
-    console.log(recipients)
     if(!Array.isArray(recipients) && typeof recipients != "string"){
       throw new Error("First argument should be a string or an Array.")
     }else{
